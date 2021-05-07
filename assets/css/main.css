@@ -177,7 +177,6 @@
 
 .banner {
     position: relative;
-    background-image: url(assets/img/banner.jpg);
     background-color: #0c0c0c;
     background-size: cover;
     background-repeat: no-repeat;
@@ -278,12 +277,11 @@
     overflow: hidden;
 }
 
-.courses-content-item:hover .courses-content-item--has-img {
-    animation: scaleImg both 0.3s;
+.courses-content-item:hover .courses-content-item__img {
+    animation: scaleImg ease 0.3s forwards;
 }
 
 .courses-content-item--has-img {
-    overflow: hidden;
     border: 1px solid rgb(238, 238, 238);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -298,7 +296,6 @@
     background-size: 100% auto;
     position: relative;
     background-color: #ccc;
-    transition: all 0.3s ease 0s;
     will-change: opacity, transform;
 }
 
